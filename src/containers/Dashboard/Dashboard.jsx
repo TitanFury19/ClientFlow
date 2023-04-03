@@ -128,7 +128,6 @@ const Dashboard = () => {
             <DataGrid
               rows={state}
               columns={columns}
-              // getRowId={(row) => row.id}
               components={{ Toolbar: GridToolbar }}
             />
           ) : (
@@ -145,21 +144,6 @@ const Dashboard = () => {
         cancel={() => setOpenModal(false)}
         onClick={() => setOpenModal(false)}
       />
-
-      {/* <Dialog open={openModal} onClose={() => setOpenModal(false)}>
-        <DialogTitle>Direcciones de clientes</DialogTitle>
-        {selectedAddress &&
-          selectedAddress.length > 0 &&
-          selectedAddress.map((a, index) => (
-            <DialogContent>
-              <DialogContentText>{a.value ? a.value : ""}</DialogContentText>
-            </DialogContent>
-          ))}
-        <DialogActions>
-          <Button onClick={() => setOpenModal(false)}>Cancel</Button>
-          <Button onClick={() => setOpenModal(false)}>Ok</Button>
-        </DialogActions>
-      </Dialog> */}
     </>
   );
 };
