@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import TopBar from "./containers/TopBarComponent/TopBarComponent";
-import Dashboard from "./containers/Dashboard/Dashboard";
+import Client from "./containers/Client/Client";
 import { ProSidebarProvider } from "react-pro-sidebar";
 import SideBarComponent from "./containers/SideBarComponent/SideBarComponent";
 import Form from "./containers/Form/Form";
@@ -22,7 +22,7 @@ function App() {
             <main className="content">
               <TopBar />
               <Routes>
-                <Route path="/" element={<Dashboard />} />
+                <Route path="/" element={<Client />} />
                 <Route path="/form" element={<Form />} />
               </Routes>
             </main>

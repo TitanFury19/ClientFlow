@@ -100,9 +100,9 @@ const SideBarComponent = () => {
           )}
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <SideBarItem
-              title="Dashboard"
+              title="Gestión de Clientes"
               to="/"
-              icon={<HomeOutlined />}
+              icon={<PeopleOutline />}
               selected={selected}
               setSelected={setSelected}
             />
